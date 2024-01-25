@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Lista de Pokémon</title>
+    <link rel="stylesheet" href="{% static 'pokedex_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+
+            <!-- Ejecutar desde POKEDEX_PROJECT -->
+            <!-- Ejecutar en la terminal: python manage.py runserver -->
+
+
+            <!-- Agregar menú de navegación aca -->
+            <ul class="nav-list">
+                 <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver todos</button></li> 
+                <li class="nav-item"><button class="btn btn-header water" id="filtro-nombres-invertidos">NOMBRE</button></li>
+                <li class="nav-item"><button class="btn btn-header fire" id="filtro-peso">weight</button></li>
+                <li class="nav-item"><button class="btn btn-header grass" id="grass">Grass</button></li>
+                <li class="nav-item"><button class="btn btn-header flying" id="filtro-flying-altura">Flying</button></li> 
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Divs para cargar los pokemones -->
+        <div id="pokemonList">  
+            <div id="todos">
+                <div class="pokemon-todos" id="listaPokemon">
+  
+                </div>
+            </div>
+    
+</div>
+    </main>
+    <script src="{% static 'pokedex_app/js/main.js' %}"></script>
+</body>
+</html>
