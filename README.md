@@ -1,5 +1,10 @@
 PROJECTO PRISCILLA TRANA VEGA POKEDEX
 
+Ejecutar en la termnal desde POKEDEX_PROJECT 
+Ejecutar en la terminal: python manage.py runserver
+
+
+
 Utilizar la Pokeapi (https://pokeapi.co/) y crear una vista para listar los primeros
 50 Pokemon, dicha vista deberá mostrar los siguientes datos:
 - ID
